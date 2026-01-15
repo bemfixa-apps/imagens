@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <!-- Gradiente de fundo -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="50%" style="stop-color:#764ba2"/>
+      <stop offset="100%" style="stop-color:#f093fb"/>
+    </linearGradient>
+    
+    <!-- Gradiente para elementos decorativos -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffecd2"/>
+      <stop offset="100%" style="stop-color:#fcb69f"/>
+    </linearGradient>
+    
+    <!-- Filtro de sombra -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    
+    <!-- Padrão de pontos decorativos -->
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="rgba(255,255,255,0.1)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Fundo com gradiente -->
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Padrão de pontos sobreposto -->
+  <rect width="800" height="400" fill="url(#dots)"/>
+  
+  <!-- Círculos decorativos -->
+  <circle cx="650" cy="80" r="120" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="700" cy="350" r="80" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="100" cy="320" r="100" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="50" cy="100" r="60" fill="rgba(255,255,255,0.07)"/>
+  
+  <!-- Formas geométricas decorativas -->
+  <path d="M720 180 L780 220 L720 260 Z" fill="rgba(255,255,255,0.1)"/>
+  <path d="M30 200 L70 160 L70 240 Z" fill="rgba(255,255,255,0.08)"/>
+  
+  <!-- Ícone de coração/agradecimento -->
+  <g transform="translate(400, 100)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="50" fill="rgba(255,255,255,0.95)"/>
+    <path d="M0 -15 C-20 -35 -40 -15 -40 5 C-40 25 0 45 0 45 C0 45 40 25 40 5 C40 -15 20 -35 0 -15" 
+          fill="url(#bgGradient)" transform="scale(0.6)"/>
+  </g>
+  
+  <!-- Estrelas decorativas -->
+  <g fill="rgba(255,255,255,0.6)">
+    <path d="M150 80 L153 90 L163 90 L155 97 L158 107 L150 100 L142 107 L145 97 L137 90 L147 90 Z" transform="scale(0.8)"/>
+    <path d="M680 280 L683 290 L693 290 L685 297 L688 307 L680 300 L672 307 L675 297 L667 290 L677 290 Z" transform="scale(0.7)"/>
+    <path d="M600 50 L602 56 L608 56 L603 60 L605 66 L600 62 L595 66 L597 60 L592 56 L598 56 Z"/>
+    <path d="M200 300 L202 306 L208 306 L203 310 L205 316 L200 312 L195 316 L197 310 L192 306 L198 306 Z"/>
+  </g>
+  
+  <!-- Texto principal -->
+  <text x="400" y="200" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="700" fill="#ffffff" filter="url(#shadow)">
+    Obrigado pela sua
+  </text>
+  <text x="400" y="255" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="700" fill="#ffffff" filter="url(#shadow)">
+    participação!
+  </text>
+  
+  <!-- Texto secundário -->
+  <text x="400" y="310" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)">
+    Sua opinião é muito importante para nós
+  </text>
+  
+  <!-- Linha decorativa -->
+  <rect x="300" y="330" width="200" height="3" rx="1.5" fill="url(#accentGradient)" opacity="0.8"/>
+  
+  <!-- Ícones de feedback nas laterais -->
+  <g transform="translate(120, 200)" opacity="0.3">
+    <circle cx="0" cy="0" r="25" stroke="#fff" stroke-width="2" fill="none"/>
+    <path d="M-10 5 Q0 15 10 5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="-7" cy="-5" r="3" fill="#fff"/>
+    <circle cx="7" cy="-5" r="3" fill="#fff"/>
+  </g>
+  
+  <g transform="translate(680, 200)" opacity="0.3">
+    <circle cx="0" cy="0" r="25" stroke="#fff" stroke-width="2" fill="none"/>
+    <path d="M-10 5 Q0 15 10 5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="-7" cy="-5" r="3" fill="#fff"/>
+    <circle cx="7" cy="-5" r="3" fill="#fff"/>
+  </g>
+  
+  <!-- Confetes -->
+  <g opacity="0.6">
+    <rect x="180" y="120" width="8" height="8" rx="1" fill="#ffecd2" transform="rotate(30 184 124)"/>
+    <rect x="620" y="100" width="6" height="6" rx="1" fill="#fcb69f" transform="rotate(-20 623 103)"/>
+    <rect x="250" y="340" width="7" height="7" rx="1" fill="#ffecd2" transform="rotate(45 253 343)"/>
+    <rect x="550" y="320" width="5" height="5" rx="1" fill="#fcb69f" transform="rotate(-35 552 322)"/>
+    <circle cx="300" cy="90" r="4" fill="#ffecd2"/>
+    <circle cx="500" cy="350" r="3" fill="#fcb69f"/>
+    <circle cx="650" cy="150" r="4" fill="#ffecd2"/>
+    <circle cx="150" cy="250" r="3" fill="#fcb69f"/>
+  </g>
+</svg>
